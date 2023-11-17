@@ -11,26 +11,6 @@ x-data="{menuIsOpen : false}"
     <title>Test menu</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="src/css/styles.css">
-    <style>
-      .menu{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: #fff;
-        display: grid;
-        place-content: center;
-      }
-      .header_menuBtn{
-        position: relative;
-        z-index: 10;
-      }
-      .noscroll,
-      .noscroll body{
-        overflow: hidden;
-      }
-    </style>
   </head>
   <body>
     <!-- https://emmet.io/ -->
@@ -51,8 +31,8 @@ x-data="{menuIsOpen : false}"
       class = "menu"
       >
         <ul>
-          <li><a href="cats/index.html">Chats</a></li>
-          <li><a href="dogs/index.html">Chiens</a></li>
+          <li><a href="cats/index.html">Des chats</a></li>
+          <li><a href="dogs/index.html">Des chiens</a></li>
         </ul>
       </nav>
     </header>

@@ -1,15 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"
+x-data="{menuIsOpen : false}" 
+:class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Les chats</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="../src/css/styles.css">
 </head>
 <body>
     <header>
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn"
+        >
+        menu
+        </button>
         <h1>Les chats</h1>
-        
+        <nav 
+        id="mainNav" 
+        x-show="menuIsOpen" 
+        x-transition.duration.800ms
+        class = "menu"
+        >
+        <ul>
+            <li><a href="/">La page d'acceuil ouuu ?</a></li>
+            <li><a href="chats-1.html">Beaucoup de chats</a></li>
+            <li><a href="chat-2.html">Encore plus de chats</a></li>
+            <li><a href="../dogs/index.html">Et là des chiens</a></li>
+        </ul>
+        </nav>
     </header>
+    <main>
+        <img src="../img/img_chat_accueil_header.jpg" alt="des chats" width="300px">
+    </main>
+
     
 </body>
 </html> 
