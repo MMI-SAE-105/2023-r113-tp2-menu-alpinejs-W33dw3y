@@ -5,7 +5,7 @@ x-data="{menuIsOpen : false}"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pas mal de chien</title>
+    <title>Some dogs</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="stylesheet" href="/src/css/styles.css">
 </head>
@@ -19,7 +19,7 @@ x-data="{menuIsOpen : false}"
         >
         menu
         </button>
-        <h1>Pas mal de chien</h1>
+        <h1>Some dogs</h1>
         <nav 
         id="mainNav" 
         x-show="menuIsOpen" 
@@ -27,26 +27,29 @@ x-data="{menuIsOpen : false}"
         class = "menu"
         >
         <ul>
-            <li><a href="/">
+            <li><a href="../index.html/">
                 <img src="/public/icones/CilHome.svg" alt="">
-                La page d'acceuil
+                Home-page
             </a></li>
             <li><a href="index.html">
                 <img src="/public/icones/CilDog.svg" alt="">
-                Acceuil des chien :3
+                Dogs home :3
             </a></li>
             <li><a href="chien-1.html">
                 <img src="/public/icones/CilArrowRight.svg" alt="" width="30px">
-                Pas mal de chien
+                Some dogs
             </a></li>
             <li><a href="chien-2.html">
                 <img src="/public/icones/CilArrowRight.svg" alt="" width="30px">
-                Et la il y en a encore
+               And more
             </a></li>
             <li><a href="/fr/cats/index.html">
                 <img src="/public/icones/CilCat.svg" alt="">
-                Et là des chats
+                And here cats
             </a></li>
+            <li><a href="/fr/dogs/chien-1.html">
+                Page in french
+              </a></li>
         </ul>
         </nav>
     </header>
