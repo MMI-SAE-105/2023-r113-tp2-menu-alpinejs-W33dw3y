@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en"
+x-data="{menuIsOpen : false}" 
+:class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Et la il y en a encore</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+    <header>
+        
+        <button 
+        aria-controls="mainNav"
+        @click="menuIsOpen = ! menuIsOpen"
+        class="header_menuBtn"
+        >
+        menu
+        </button>
+        <h1>Et la il y en a encore</h1>
+        <nav 
+        id="mainNav" 
+        x-show="menuIsOpen" 
+        x-transition.duration.800ms
+        class = "menu"
+        >
+        <ul>
+            <li><a href="/">
+                <img src="/public/icones/CilHome.svg" alt="">
+                La page d'acceuil
+            </a></li>
+            <li><a href="index.html">
+                <img src="/public/icones/CilDog.svg" alt="">
+                Acceuil des chien :3
+            </a></li>
+            <li><a href="chien-1.html">
+                <img src="/public/icones/CilArrowRight.svg" alt="" width="30px">
+                Pas mal de chien
+            </a></li>
+            <li><a href="chien-2.html">
+                <img src="/public/icones/CilArrowRight.svg" alt="" width="30px">
+                Et là il y en a encore
+            </a></li>
+            <li><a href="/fr/cats/index.html">
+                <img src="/public/icones/CilCat.svg" alt="">
+                Et là des chats
+            </a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <img src="/public/img/dogs/img_chien_2.jpg" alt="" width="100%">
+    </main>
+</body>
+</html>
