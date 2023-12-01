@@ -5,9 +5,9 @@ x-data="{menuIsOpen : false}"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Les chiens</title>
+    <title>Et la il y en a encore</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
-    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/styles.css">
 </head>
 <body>
     <header>
@@ -19,7 +19,7 @@ x-data="{menuIsOpen : false}"
         >
         menu
         </button>
-        <h1>Les chiens</h1>
+        <h1>Et la il y en a encore</h1>
         <nav 
         id="mainNav" 
         x-show="menuIsOpen" 
@@ -28,25 +28,30 @@ x-data="{menuIsOpen : false}"
         >
         <ul>
             <li><a href="/">
-                <img src="../public/icones/CilHome.svg" alt="">
+                <img src="/public/icones/CilHome.svg" alt="">
                 La page d'acceuil
             </a></li>
+            <li><a href="index.html">
+                <img src="/public/icones/CilDog.svg" alt="">
+                Acceuil des chien :3
+            </a></li>
             <li><a href="chien-1.html">
-                <img src="../public/icones/CilArrowRight.svg" alt="" width="30px">
+                <img src="/public/icones/CilArrowRight.svg" alt="" width="30px">
                 Pas mal de chien
             </a></li>
             <li><a href="chien-2.html">
-                <img src="../public/icones/CilArrowRight.svg" alt="" width="30px">
-                Et la il y en a encore
+                <img src="/public/icones/CilArrowRight.svg" alt="" width="30px">
+                Et là il y en a encore
             </a></li>
-            <li><a href="../cats/index.html">
-                <img src="../public/icones/CilCat.svg" alt="">
+            <li><a href="/fr/cats/index.html">
+                <img src="/public/icones/CilCat.svg" alt="">
                 Et là des chats
             </a></li>
         </ul>
         </nav>
-        <img src="../public/img/dogs/img_chien_accueil_header.jpg" alt="des chats" width="300px">
     </header>
-    
+    <main>
+        <img src="/public/img/dogs/img_chien_2.jpg" alt="" width="100%">
+    </main>
 </body>
 </html>
